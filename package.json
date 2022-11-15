@@ -1,0 +1,26 @@
+{
+  "name": "portafolio",
+  "version": "1.0.0",
+  "description": "Proyecto CV",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Sebasstardo/Portafolio.git"
+  },
+  "keywords": [
+    "Sass",
+    "gulp"
+  ],
+  "author": "InariStudio",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Sebasstardo/Portafolio/issues"
+  },
+  "homepage": "https://github.com/Sebasstardo/Portafolio#readme",
+  "devDependencies": {
+    "sass": "^1.56.1"
+  }
+}

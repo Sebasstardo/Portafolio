@@ -1,0 +1,10 @@
+#body-skills{
+    background-color: black;
+}
+
+.column-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,50rem),1fr));
+    gap: 4rem;
+    grid-auto-rows: 80vh;
+  }

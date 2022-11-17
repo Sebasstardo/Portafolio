@@ -1,30 +1,22 @@
 
 @use 'variable'as v;
 
-html {
-    font-size: 62.5%;
-    box-sizing: border-box;
-    scroll-behavior: smooth;
-    font-family: v.$fuentePrincipal;
-    
-  }
+html, body{
   
-  body {
-    margin: 0;
-    padding: 0;
-    height: 100vh;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
-    
-  }
+  margin:0;
+  font-size: 62.5%;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: v.$fuentePrincipal;
+  height: 100%;
+  width: 100%;
+}
+
   
-  main {
-    height: 80%;
-  }
-  
+
+
   header {
-    height: 10%;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: end;
@@ -34,6 +26,10 @@ html {
       margin-right: 2rem;
     }
   
+  }
+  
+  footer{
+    height: 10vh;
   }
   
   a {
@@ -47,7 +43,6 @@ html {
   *:after {
     box-sizing: inherit;
   }
-  
   p,
   i {
     font-size: 2rem;
@@ -59,6 +54,7 @@ html {
     justify-content: center;
     align-items: center;
     list-style: none;
+    padding: 0;
   
     li:not(:last-child) {
       margin-right: 5rem;
@@ -90,9 +86,21 @@ html {
     font-size: 3rem;
   }
   
-  
   .contenedor {
-    max-width: 120rem;
+    max-width: 220rem;
     width: 95%;
     margin: 0 auto;
+  }
+
+  .card{
+    border: 2px solid white;
+  }
+
+  @media (max-width: 475px){
+    ul{
+      flex-direction: column;      
+    }
+    ul li:not(:last-child) {
+      margin-right: 0;
+    }
   }

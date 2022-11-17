@@ -1,13 +1,21 @@
-body {
+
+
+#body-id {
     background-image: url('../img/inicio.webp'); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
     
 }
 
-main {
+#main-inicio {
+    height: 75vh;
+
     display: flex;
     justify-content: center;
     align-items: center;      
     color: white;
+    
     .title{
         text-align: center;
     }

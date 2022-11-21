@@ -1,5 +1,6 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400&display=swap");
-html, body {
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;900&display=swap");
+html,
+body {
   margin: 0;
   font-size: 62.5%;
   box-sizing: border-box;
@@ -21,6 +22,9 @@ header i:not(:last-child) {
 
 footer {
   height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 a {
@@ -61,6 +65,7 @@ h2,
 h3 {
   margin: 0;
   font-weight: 100;
+  color: white;
 }
 
 h1 {
@@ -68,21 +73,14 @@ h1 {
 }
 
 h2 {
-  font-size: 3.6rem;
+  font-size: 2rem;
+  font-weight: 900;
+  text-transform: uppercase;
 }
 
 h3 {
-  font-size: 3rem;
-}
-
-.contenedor {
-  max-width: 220rem;
-  width: 95%;
-  margin: 0 auto;
-}
-
-.card {
-  border: 2px solid white;
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 @media (max-width: 475px) {
@@ -93,6 +91,12 @@ h3 {
     margin-right: 0;
   }
 }
+.contenedor {
+  max-width: 220rem;
+  width: 95%;
+  margin: 0 auto;
+}
+
 #body-id {
   background-image: url("../img/inicio.webp");
   background-repeat: no-repeat;
@@ -120,4 +124,17 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 50rem), 1fr));
   gap: 4rem;
   grid-auto-rows: 80vh;
+}
+
+.card {
+  border: 2px solid white;
+}
+
+.skills {
+  display: flex;
+  padding-top: 4rem;
+  padding-left: 1rem;
+}
+.skills h3 {
+  padding-left: 1rem;
 }

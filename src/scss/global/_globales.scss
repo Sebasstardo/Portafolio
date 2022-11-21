@@ -1,9 +1,9 @@
-
 @use 'variable'as v;
 
-html, body{
-  
-  margin:0;
+html,
+body {
+
+  margin: 0;
   font-size: 62.5%;
   box-sizing: border-box;
   scroll-behavior: smooth;
@@ -12,95 +12,100 @@ html, body{
   width: 100%;
 }
 
-  
+
+header {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: end;
 
 
-  header {
-    height: 10vh;
-    display: flex;
-    align-items: center;
-    justify-content: end;
-  
-  
-    i:not(:last-child) {
-      margin-right: 2rem;
-    }
-  
+  i:not(:last-child) {
+    margin-right: 2rem;
   }
-  
-  footer{
-    height: 10vh;
+
+}
+
+footer {
+  height: 10vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: white !important;
+  font-size: 1.5rem !important;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+p,
+i {
+  font-size: 2rem;
+  color: white;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style: none;
+  padding: 0;
+
+  li:not(:last-child) {
+    margin-right: 5rem;
   }
-  
-  a {
-    text-decoration: none;
-    color: white !important;
-    font-size: 1.5rem !important;
-  }
-  
-  *,
-  *:before,
-  *:after {
-    box-sizing: inherit;
-  }
-  p,
-  i {
-    font-size: 2rem;
-    color: white;
-  }
-  
+}
+
+
+img {
+  max-width: 100%;
+}
+
+h1,
+h2,
+h3 {
+  margin: 0;
+  font-weight: v.$liviana;
+  color: white;
+}
+
+h1 {
+  font-size: 5rem;
+
+}
+
+h2 {
+  font-size: 2rem;    
+  font-weight: v.$bold;
+  text-transform: uppercase;
+}
+
+h3 {
+  font-size: 1.8rem;
+  font-weight: v.$media;
+
+}
+
+@media (max-width: 475px) {
   ul {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    list-style: none;
-    padding: 0;
-  
-    li:not(:last-child) {
-      margin-right: 5rem;
-    }
-  }
-  
-  
-  img {
-    max-width: 100%;
-  }
-  
-  h1,
-  h2,
-  h3 {
-    margin: 0;
-    font-weight: v.$liviana;
-  }
-  
-  h1 {
-    font-size: 5rem;
-  
-  }
-  
-  h2 {
-    font-size: 3.6rem;
-  }
-  
-  h3 {
-    font-size: 3rem;
-  }
-  
-  .contenedor {
-    max-width: 220rem;
-    width: 95%;
-    margin: 0 auto;
+    flex-direction: column;
   }
 
-  .card{
-    border: 2px solid white;
+  ul li:not(:last-child) {
+    margin-right: 0;
   }
+}
 
-  @media (max-width: 475px){
-    ul{
-      flex-direction: column;      
-    }
-    ul li:not(:last-child) {
-      margin-right: 0;
-    }
-  }
+.contenedor {
+  max-width: 220rem;
+  width: 95%;
+  margin: 0 auto;
+}
+

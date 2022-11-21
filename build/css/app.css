@@ -126,6 +126,7 @@ h3 {
   grid-auto-rows: 80vh;
 }
 
+<<<<<<< HEAD
 .card {
   border: 2px solid white;
 }
@@ -137,4 +138,21 @@ h3 {
 }
 .skills h3 {
   padding-left: 1rem;
+=======
+#body_portafolio {
+  background-color: black;
+}
+
+#main_portafolio {
+  height: 70vh;
+  display: grid;
+  align-items: center;
+}
+
+.column_grid_portafolio {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 50rem), 1fr));
+  gap: 4rem;
+  height: 95%;
+>>>>>>> a7a85adc7552f058daa90da56f31ba3297a75be6
 }

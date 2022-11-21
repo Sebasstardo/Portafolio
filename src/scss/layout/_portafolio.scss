@@ -1,0 +1,16 @@
+#body_portafolio{
+    background-color: black;
+}
+#main_portafolio{
+    height: 70vh;
+    display: grid;
+    align-items: center;
+
+}
+
+.column_grid_portafolio {
+    display: grid;    
+    grid-template-columns: repeat(auto-fit, minmax(min(100%,50rem),1fr));
+    gap: 4rem;
+    height: 95%;
+  }

@@ -29,6 +29,7 @@ footer {
 
 a {
   text-decoration: none;
+  font-weight: 600;
   color: white !important;
   font-size: 1.5rem !important;
 }
@@ -105,7 +106,7 @@ h3 {
 }
 
 #main-inicio {
-  height: 75vh;
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -126,11 +127,6 @@ h3 {
   grid-auto-rows: 80vh;
 }
 
-<<<<<<< HEAD
-.card {
-  border: 2px solid white;
-}
-
 .skills {
   display: flex;
   padding-top: 4rem;
@@ -138,21 +134,35 @@ h3 {
 }
 .skills h3 {
   padding-left: 1rem;
-=======
+}
+
 #body_portafolio {
   background-color: black;
 }
-
-#main_portafolio {
-  height: 70vh;
+#body_portafolio #main_portafolio {
+  height: 80vh;
   display: grid;
   align-items: center;
 }
-
-.column_grid_portafolio {
+#body_portafolio #main_portafolio .column_grid_portafolio {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(100%, 50rem), 1fr));
   gap: 4rem;
-  height: 95%;
->>>>>>> a7a85adc7552f058daa90da56f31ba3297a75be6
+  align-items: center;
+  grid-auto-rows: 50vh;
+}
+
+.card {
+  border: 2px solid #5ec6ea;
+  border-radius: 5px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s linear;
+}
+.card:hover {
+  border: 2px solid #89317c;
+  transition: all 0.3s linear;
 }

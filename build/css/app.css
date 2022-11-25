@@ -74,9 +74,8 @@ h1 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   font-weight: 900;
-  text-transform: uppercase;
 }
 
 h3 {
@@ -127,6 +126,10 @@ h3 {
   grid-auto-rows: 80vh;
 }
 
+.card2 {
+  border: 3px solid #89317c;
+}
+
 .skills {
   display: flex;
   padding-top: 4rem;
@@ -137,25 +140,19 @@ h3 {
 }
 
 #body_portafolio {
-  background-color: black;
+  background-color: #191d1e;
 }
 #body_portafolio #main_portafolio {
   height: 80vh;
-  display: grid;
-  align-items: center;
 }
 #body_portafolio #main_portafolio .column_grid_portafolio {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(100%, 50rem), 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 30rem), 1fr));
   gap: 4rem;
-  align-items: center;
-  grid-auto-rows: 50vh;
+  margin-top: 6%;
 }
 
 .card {
-  border: 2px solid #5ec6ea;
-  border-radius: 5px;
-  height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -163,6 +160,8 @@ h3 {
   transition: all 0.3s linear;
 }
 .card:hover {
-  border: 2px solid #89317c;
+  border: 2px solid #802a6f;
+  border-radius: 10px;
+  box-shadow: 0px 2px 40px 0px #802a6f;
   transition: all 0.3s linear;
 }

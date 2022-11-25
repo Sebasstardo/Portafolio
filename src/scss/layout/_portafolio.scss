@@ -1,31 +1,30 @@
 #body_portafolio{
-    background-color: black;
-    #main_portafolio{
-    height: 80vh;
-        display: grid;
-        align-items: center;
-        .column_grid_portafolio {
-            display: grid;    
-            grid-template-columns: repeat(auto-fit, minmax(min(100%,50rem),1fr));
-            gap: 4rem;            
-            align-items: center;            
-            grid-auto-rows: 50vh;
-          }    
-    }
+    background-color: #191d1e;
+  #main_portafolio{          
+    height:80vh;  
+    .column_grid_portafolio {
+        display: grid;    
+        grid-template-columns: repeat(auto-fit, minmax(min(100%,30rem),1fr));
+        gap: 4rem;            
+        margin-top: 6%;
+      }    
+}
 }
 
-.card {
-    border: 2px solid #5ec6ea;
-    border-radius: 5px;
-    height: 100%;
+
+.card {           
     display: flex;
     align-items: center;
     justify-content: center;
     cursor: pointer;
-    transition: all 0.3s linear;
-    
+    transition: all 0.3s linear;    
     &:hover{
-        border:2px solid #89317c;
+        border: 2px solid #802a6f;
+        border-radius: 10px;    
+        box-shadow: 0px 2px 40px 0px #802a6f;
         transition: all 0.3s linear;
     }
   }
+
+
+

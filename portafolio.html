@@ -6,36 +6,46 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="build/css/app.css">    
-    
+    <script src="//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js"></script>
+    <script src="https://code.createjs.com/easeljs-0.7.1.min.js"></script>    
     <!-- CSS only -->
     <title>Desarrollador Front-End</title>
 </head>
 
 <body id="body_portafolio">
     
-    <header class="contenedor">
-        <section>
-            <i class="fa-brands fa-instagram"></i>
-            <i class="fa-brands fa-linkedin"></i>
-            <i class="fa-brands fa-github"></i>
-        </section>
-    </header>
-
-    <main id="main_portafolio"  class="contenedor">
-        <article class="column_grid_portafolio">
-            <section class="card">
-                <img src="build/img/rgm.webp" alt="">
+        <header class="contenedor">
+            <section>
+                <i class="fa-brands fa-instagram"></i>
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-github"></i>
             </section>
-            <section class="card">
-                <img src="build/img/logo.webp" alt="">
-            </section>
-            <section class="card"></section>
-        </article>            
-    </main>
+        </header>
+    
+        <main id="main_portafolio"  class="contenedor">
+            <div class="box-title">
+                <h1>Lorem ipsum dolor sit</h1>
+                <h2>Lorem ipsum</h2>
+            </div>
+            <article class="column_grid_portafolio">
+                <section class="card">
+                    <img src="build/img/rgm.webp" alt="">
+                </section>
+                <section class="card">
+                    <img src="build/img/logo.webp" alt="">
+                </section>
+                <section class="card">
+                    <img src="build/img/logo.webp" alt="">
+                </section>
+            </article>            
+        </main>
+    
+        <footer class="contenedor">
+            <nav-bar></nav-bar>
+        </footer>
 
-    <footer class="contenedor">
-        <nav-bar></nav-bar>
-    </footer>
+    
+
 
     <script src="src/js/main.js"></script>
     <script src="https://kit.fontawesome.com/ad47ad7175.js" crossorigin="anonymous"></script>

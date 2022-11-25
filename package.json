@@ -22,12 +22,13 @@
   },
   "homepage": "https://github.com/Sebasstardo/Portafolio#readme",
   "devDependencies": {
+    "graceful-fs": "^4.2.2",
     "gulp": "^4.0.2",
     "gulp-cache": "^1.1.3",
-    "gulp-imagemin": "^7.1.0",
+    "gulp-imagemin": "^4.1.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^5.1.0",
-    "gulp-webp": "^4.0.1",
+    "gulp-webp": "^3.0.0",
     "sass": "^1.56.1"
   }
 }

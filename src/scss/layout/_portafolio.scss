@@ -1,16 +1,11 @@
 #body_portafolio{
-    background-color: #191d1e;
-  #main_portafolio{          
-    height:80vh;  
-    .column_grid_portafolio {
-        display: grid;    
-        grid-template-columns: repeat(auto-fit, minmax(min(100%,30rem),1fr));
-        gap: 4rem;            
-        margin-top: 6%;
-      }    
-}
-}
+  background-image: url('../img/inicio.webp'); 
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
 
+}
+  
 
 .card {           
     display: flex;

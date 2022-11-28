@@ -5,13 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="build/css/app.css">    
+    <link rel="stylesheet" href="build/css/app.css">
     <!-- CSS only -->
     <title>Desarrollador Front-End</title>
 </head>
 
-<body id="body-id">
-    
+<body>
     <header class="contenedor">
         <section>
             <i class="fa-brands fa-instagram"></i>
@@ -19,22 +18,52 @@
             <i class="fa-brands fa-github"></i>
         </section>
     </header>
-    
-    <main id="main-inicio" class="contenedor">
-        <article class="title">
-            <section>
-                <h1>Desarrollador  & Diseñador</h1>
-                <h2>Front-End</h2>
-            </section>
-        </article>
-        <article></article>        
-    </main>
 
-    <footer class="contenedor">
-        <nav-bar></nav-bar>
-    </footer>
+    <main class="horizontal-scroll-wrapper snaps-inline"
+     data-0="background-color:rgb(0,0,255); transform:translateX(0%);" 
+     data-500="background-color:rgb(255,0,0); transform:translateX(-100%)">
+
+        <article class="main-inicio">
+            <div>
+                <h1>Desarrollador & Diseñador</h1>
+                <h2>Front-End</h2>
+            </div>
+        </article>
+        
+        <article class="main_portafolio" >
+            <section class="column_grid_portafolio">
+                <div class="box-title">
+                    <h1>Lorem ipsum dolor sit</h1>
+                    <h2>Lorem ipsum</h2>
+                </div>
+                <div class="card">
+                    <img src="build/img/rgm.webp" alt="">
+                </div>
+                <div class="card">
+                    <img src="build/img/logo.webp" alt="">
+                </div>
+                <div class="card">
+                    <img src="build/img/logo.webp" alt="">
+                </div>
+            </section>
+
+        </article>
+
+    </main>
+        <footer class="contenedor">
+            <nav-bar></nav-bar>
+        </footer>
+
+    
+
+
+    <script type="text/javascript" src="./src/js/skrollr.js"></script>
+    <script type="text/javascript">
+        var s = skrollr.init();
+    </script>
 
     <script src="https://kit.fontawesome.com/ad47ad7175.js" crossorigin="anonymous"></script>
-    <script src="src/js/main.js"></script>    
+    <script src="src/js/main.js"></script>
 </body>
+
 </html>

@@ -8,11 +8,10 @@
     left: 0;
     overscroll-behavior-inline:contain ;
 
-    article {
+    article, .main-inicio {
         height: 100vh;
         min-width: 100%;        
-        display: flex;                 
-        align-items: center;
+     
     }
 }
 .snaps-inline{
@@ -22,8 +21,9 @@
 
 .main-inicio {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
+    flex-direction: column;    
+    justify-content:center; 
+    align-items: flex-start;
     color: white;
     margin-left: 12vw; 
 
@@ -31,7 +31,6 @@
         text-align: center;
     }
 }
-
 
 .column_grid_portafolio {
     display: flex;

@@ -57,7 +57,7 @@ footer {
   align-items: center;
   justify-content: center;
   position: fixed;
-  border-right: 1px solid v.$fSecond;
+  border-right: 1px solid pink;
 
   nav {
     transform: rotate(180deg);
@@ -78,7 +78,9 @@ footer {
 
 }
 
-
+span{
+  color: v.$fSecond;
+}
 
 img {
   max-width: 100%;

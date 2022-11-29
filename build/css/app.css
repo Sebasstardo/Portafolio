@@ -51,7 +51,7 @@ footer {
   align-items: center;
   justify-content: center;
   position: fixed;
-  border-right: 1px solid #fb0074;
+  border-right: 1px solid pink;
 }
 footer nav {
   transform: rotate(180deg);
@@ -66,6 +66,10 @@ footer nav ul {
   padding: 0;
   list-style: none;
   writing-mode: vertical-lr;
+}
+
+span {
+  color: #fb0074;
 }
 
 img {
@@ -117,11 +121,9 @@ h3 {
   left: 0;
   overscroll-behavior-inline: contain;
 }
-.horizontal-scroll-wrapper article {
+.horizontal-scroll-wrapper article, .horizontal-scroll-wrapper .main-inicio {
   height: 100vh;
   min-width: 100%;
-  display: flex;
-  align-items: center;
 }
 
 .snaps-inline {
@@ -130,8 +132,9 @@ h3 {
 
 .main-inicio {
   display: flex;
-  justify-content: flex-start;
-  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
   color: white;
   margin-left: 12vw;
 }

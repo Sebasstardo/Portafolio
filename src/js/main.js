@@ -5,15 +5,7 @@ class navBar extends HTMLElement {
 
   connectedCallback() {
     this.innerHTML = `
-        <nav>
-            <ul>
-                <li><a href="./index.html">Inicio</a></li>
-                <li><a href="./portafolio.html">Portafolio</a></li>
-                <li><a href="./skills.html">Skills</a></li>                
-                <li><a href="">Estudio</a></li>
-                <li><a href="">Contacto</a></li>
-            </ul>  
-        </nav>     
+       
         `;
   }
 }

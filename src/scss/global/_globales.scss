@@ -1,4 +1,4 @@
-@use 'variable'as v;
+@use 'variable' as v;
 
 html,
 body {
@@ -29,23 +29,7 @@ header {
 
 }
 
-footer {
-  position: fixed;
- bottom: 0;
-  height: 10vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  right: 0;
-left: 0;
-}
 
-a {
-  text-decoration: none;
-  font-weight: 600;
-  color: white !important;
-  font-size: 1.5rem !important;
-}
 
 *,
 *:before,
@@ -59,17 +43,41 @@ i {
   color: white;
 }
 
-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  list-style: none;
-  padding: 0;
-
-  li:not(:last-child) {
-    margin-right: 5rem;
-  }
+a {
+  text-decoration: none;
+  font-weight: v.$liviana;
+  color: white !important;
+  font-size: 1.6rem !important;
 }
+footer {
+  background-color: black;
+  height: 100vh;
+  width: 6vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  border-right: 1px solid v.$fSecond;
+
+  nav {
+    transform: rotate(180deg);
+    display: flex;
+    flex-direction: column-reverse;
+
+    ul {
+      height: 65%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0;
+      list-style: none;
+      writing-mode: vertical-lr;
+
+    }
+  }
+
+}
+
 
 
 img {
@@ -89,8 +97,9 @@ h1 {
 }
 
 h2 {
-  font-size: 3rem;    
+  font-size: 3rem;
   font-weight: v.$bold;
+  color: v.$fSecond;
 }
 
 h3 {
@@ -114,4 +123,3 @@ h3 {
   width: 95%;
   margin: 0 auto;
 }
-

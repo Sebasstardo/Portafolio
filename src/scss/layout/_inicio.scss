@@ -1,24 +1,18 @@
-#body-id {
-    
 
-}
 
 .horizontal-scroll-wrapper {
-    
+    width: 100%;
+    display: flex;       
     position: fixed;
     top: 0;
     left: 0;
-    width: 100%;
-    display: flex;
     overscroll-behavior-inline:contain ;
 
     article {
-        min-width: 100%;
-        height: auto;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         height: 100vh;
+        min-width: 100%;        
+        display: flex;                 
+        align-items: center;
     }
 }
 .snaps-inline{
@@ -28,9 +22,10 @@
 
 .main-inicio {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     color: white;
+    margin-left: 12vw; 
 
     .title {
         text-align: center;
@@ -39,12 +34,7 @@
 
 
 .column_grid_portafolio {
-
-    // display: grid;
-    // grid-template-columns: repeat(auto-fit, minmax(min(100%, 10rem), 1fr));
-    // gap: 4rem;
     display: flex;
-
     img {
         max-width: 100%;
         height: 17rem;

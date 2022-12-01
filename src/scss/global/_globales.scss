@@ -49,6 +49,7 @@ a {
   color: white !important;
   font-size: 1.6rem !important;
 }
+
 footer {
   background-color: black;
   height: 100vh;
@@ -73,12 +74,18 @@ footer {
       list-style: none;
       writing-mode: vertical-lr;
 
+      img {
+        transform: rotate(90deg);
+        height: 40px;
+        width: 100%;
+      }
+
     }
   }
 
 }
 
-span{
+span {
   color: v.$fSecond;
 }
 
